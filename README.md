@@ -1,2 +1,5 @@
 # slider
 swipe slider with multiple setups
+
+Please see demo at https://slider.abelikov5.ru/swipe.html
+Created base on SwipeJS https://swiperjs.com/
