@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-container {     /* Размер контейнера в слайдере */
+      width: 100%;
+      height: 260px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    /* Размер изображения в слайдере */
+    .swiper-slide img {
+        cursor: pointer;
+        transition: transform 0.6s ease;
+        height: 200px;
+        width: auto;
+        pointer-events: auto!important;
+    }
+    /* Настроки для Новой и Старой цены (цвет шрифта) */
+    .wrap_img .item_old_price {
+        color: #3d3232;
+        text-transform: uppercase;
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+    .wrap_img .item_new_price {
+        text-transform: uppercase;
+        color: #a80000;
+        font-weight: bold;
+    }
+    .wrap_img .item_name {
+        color: #3d3232;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    .wrap_img img:hover {
+        transform: scale(1.1); /* Увеличиваем масштаб */
+        transition: transform 0.6s ease;
+    }
+
+    /* Настройки стрелок */
+    .swiper-button-prev {
+        left: 0!important;
+        color:  #3d3232!important;
+    }
+    .swiper-button-next {
+        right: 0!important;
+        color: #3d3232!important;
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover {
+        color: goldenrod!important;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size:   20px!important;
+        font-weight: bold!important;
+    }
+    /* Настройки процент скидки */
+    .disc {
+        position: absolute;
+        right:  30%;
+        top:    6%;
+    }
+    .disc p {
+        position: absolute;
+        color:whitesmoke;
+        font-weight: bold;
+        font-size:   12px;
+        line-height: 40px;
+        width:       40px;
+        text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">1. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">2. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+        </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">3. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">4. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">5. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">6. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">7. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">8. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">9. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="wrap_img">
+            <div class="disc"><p style="background-color: rgb(128, 0, 96); border-radius: 50%; color: white">-20%</p></div>
+            <a href="https://yandex.ru" target="_blank"><img src="https://static-cdn4.vigbo.tech/u73501/85634/blog/5554839/5007184/65500368/500-bcaeef61e202d8fe44a95db9054d8795.png" alt=""></a>    
+            <div class="item_name">10. Декоративная дизайнерская статуэтка "Footsteps"</div>
+            <div class="item_old_price">8 780 руб.</div>
+            <div class="item_new_price">5 780 руб.</div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Скрипт перемешивания выдачи карточек товара  -->
+  <script>
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+    let arr_el = document.querySelectorAll('.swiper-slide');
+    let upd_arr_el = [];
+    arr_el.forEach(element => upd_arr_el.push(element.innerHTML));
+    upd_arr_el = shuffle(upd_arr_el);
+
+    arr_el.forEach(function(el, i){
+        el.innerHTML = upd_arr_el[i];
+    })
+  </script>
+  <!-- Работа скрипта под разные устройства  -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,                     // бесконечный (круговой) цикл прокрутки слайдов
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 3000,                  // задержка между слайдами в мс
+        disableOnInteraction: true,
+      },
+      // количество слайдом на разных устройствах
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      }
+    });
+    </script>
+
+</body>
+
+</html>
